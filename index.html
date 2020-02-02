@@ -23,15 +23,15 @@
 	  <h3>Neural Algorithms Reading Group</h3>
    </div>
 	<div class="row-fluid voffset1">
-      	<span class="icon-time"></span><strong>Time:</strong> Fridays 11am-12:30pm, Spring Semester 2019 (first Meeting 2/15)
+      	<span class="icon-time"></span><strong>Time:</strong> Fridays 11am-12:30pm, Spring Semester 2020 (first Meeting 2/14)
 	</div>
 	 <div class="row-fluid voffset1">
-	  <span class="icon-map-marker"></span><strong>Location:</strong> Stata 397 <br>
+	  <span class="icon-map-marker"></span><strong>Location:</strong> Stata G825 <br>
 	  
-	  <div style="margin-top: 5px;">(Take the Gates Tower elevators to the 3rd floor, turn right when you leave the elevator and go through the gray double doors.  Follow signs to room 397.)</div>
+	  <div style="margin-top: 5px;">(Take G tower elevator to 8th floor and follow signs to room G825.)</div>
 	</div>
 	 <div class="row-fluid voffset1">
-	  <span class="icon-envelope"></span><strong>Organizers:</strong> Nancy Lynch (lynch at csail dot mit dot edu), Cameron Musco (cnmusco at mit dot edu), Lili Su (lilisu3 at csail dot mit dot edu)<br>
+	  <span class="icon-envelope"></span><strong>Organizers:</strong> Nancy Lynch (lynch at csail dot mit dot edu), Mien Brabeeba Wang (brabeeba at mit dot edu), Lili Su (lilisu3 at csail dot mit dot edu)<br>
 	</div>
 <div class="row-fluid voffset1">
 	<div class="col-md-10 colp-lg-8" >
@@ -40,266 +40,157 @@
   <div class="row voffset1">
     <div class="col-md-12">
       <section id="publications">
+      	<h3>Background reading/watching</h3>
+      	<ul>
+      		<li>
+      			<a href="https://b-ok.cc/book/2477222/4a05ed">Principles of Neural Science</a>
+      		</li>
+      		<li>
+      			<a href="https://nancysbraintalks.mit.edu/">Nancy Kanwisher online course</a>
+      		</li>
+      		<li>
+      			<a href="https://computationandbrain.github.io/about/">Christos Papadimitriou on-line course ("Computation and the Brain")</a>
+      		</li>
+      		<li>
+      			<a href="http://cseweb.ucsd.edu/~dasgupta/254-neural-ul/index.html">Sanjoy Dasgupta’s course (“Neurally-inspired unsupervised learning")</a>
+      		</li>
+      		<li>
+      			<a href="https://www.frontiersin.org/research-topics/39/spike-timing-dependent-plasticity">Reviews on Spike-timing dependent plasticity</a>
+      		</li>
+      	</ul>
+
+
         <h3>(Tentative) Schedule</h3>
 		
-		<h4><strong>Models of Neural Computation</strong> (~2 meetings)</h4>
-		
-		<p>(2/15) Introduction, Cameron and Nancy.
+		<p>(2/14) Overview and planning:  Nancy Lynch
 			<ul>
-			<li>
-				<a href=vision.html>Vision statement/general plan</a> for the group.
-				<a href="http://amath.kaist.ac.kr/~nipl/am621/lecturenotes/spiking_neurons_2.pdf">Networks of spiking neurons: the third generation of neural network models.</a> Wolfgang Maass. See for discussion of threshold, continous output, and continuous time spiking neural network models (first, second, and third generations).</li>
-			<li>For description of the spiking network model used in our work (which we did not get to covering), see Section 5.2 of <a href="./cnmuscoThesis.pdf">Cameron's thesis</a>. See Section 5.5.1 for an extension of the model incorporating firing history.</li>
-			<li><a href="https://arxiv.org/pdf/1808.03884.pdf">Composition paper</a> handed out by Nancy.</li>
+			<li>Goals, overview of topics</li>
+			<li>Planning topics, assigning papers/books to present</li>
+			<li>Review of learning rules:
+				<ul>
+					<li> Short-term vs. long-term learning:  Setting up firing patterns vs. 
+changing edge weights.</li>
+<li> Local learning rules, vs. global optimization</li>
+<li> Supervised and unsupervised learning</li>
+<li>Hebbian learning in rate-based networks and SNNs, Oja, Other rules?  Hopfield network material?</li>
+				</ul>
+
+			</li>
+			<strong>Source:</strong>
+			<ul>
+				<li>Neural Networks---A Systematic Introduction, Chapters 5, 13, 14.</li>
+				<li>Oja, Neural Networks, Principal Components, and Subspaces</li>
+			</ul>
 		</ul>
 		</p>
 		
-		<p>(2/20) Algorithms and Data Structures in the Brain, Saket Navlakha's Special Seminar. Kiva, 4-5pm
-			<ul>
-			<li><a href=https://www.csail.mit.edu/event/eecs-special-seminar-algorithms-and-data-structures-brain>Announcment here</a>.</li> 
-		</ul>
-		</p>
-		
-		<p>(2/22) Spiking neural network models, models with memory, asynchrony, Brabeeba, Lili, and CJ
+		<p>(2/21) Short-term learning:  Cameron Musco
 			<ul>
 				<strong>To read:</strong>
 				<ul>
-			<li>Review stochastic spiking model of Musco, Lynch, Parter work. See Section 5.2 of <a href="./cnmuscoThesis.pdf">Cameron's thesis</a>. See Section 5.5.1 for an extension of the model incorporating firing history.</li> 
-			<li>Skim over <a href="https://arxiv.org/pdf/1808.03884.pdf">composition paper</a> handed out by Nancy just to get flavor of results</li>
-			<li>Maass <a href = https://igi-web.tugraz.at/PDF/75.pdf>lower bound paper</a>.</li>
+			<li>Hitron, Lynch, Musco, Parter. Random Sketching, Clustering, and Short-Term Memory in Spiking Neural Networks. ITCS, January 2020.</li>
 		</ul>
 		<strong>To be presented:</strong>
 		<ul>
-			<li>Overview of composition paper by Nancy.</li>
-			<li>Overview of spiking models with history, including her own work and  Section 5.5.1 of Cameron's thesis by Lili.</li>
-			<li>Overview of single neuron modeling, firing rate based model and an integrate-and-fire model modified from Hodgkin-Huxley biophysical model by CJ. References:</li>
-			<ul>
-				<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484078/">Excitatory and inhibitory interactions in localized populations of model neurons.</a> Wilson and Cowan. Provides pioneering analyses of firing-rate model.</li>
-				<li><a href="https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/jphysiol.1952.sp004764">A quantitative description of membrane current and its application to conduction and excitation in nerve.</a> Hodgkin and Huxley.</li>
-				<li><a href="https://link.springer.com/article/10.1007/BF02477753">Mathematical models of threshold phenomena in the nerve membrane. </a> Fitzhugh. Describes the FitzHugh–Nagumo model, a simplified two-variable dynamical model adapted from H-H.</li>
-			</ul>
-			<li>Maass <a href = https://igi-web.tugraz.at/PDF/75.pdf>lower bound paper</a>, Brabeeba.</li>
+			<li>Overview of the renaming paper by Cameron</li>
 		</ul>
-		<strong>Details on what was presented:</strong>
-		<ul>
-			<li>Covered compisition paper. </li>
-			<ul>
-				<li>Point raised: our notion of neural network "behavior" is very general. Interesting examples, or even general transformation or expressiveness results, would use restrictions.  Our result just givess a general foundation.</li>
-				<li>Question raised: what functions in the brain are actually compositional?</li>
-			</ul>
-			<li>Lili discussed two-layer neural networks as considered commonly in the machine learning community following <a href="https://web.stanford.edu/~montanar/OTHER/simple-nnets.pdf">these notes</a>. Covered basic universality (i.e. the network can approximate real valued functions to given accuracy) results. See <a href="LiliTwoLayerNotes.pdf">summary</a>, courtesy of Lili.</li>
-			<ul>
-				<li>An interesting question is if one can prove universality results for stochastic spiking networks. I.e. for mapping inifite sequences of Boolean vectors to sets of probability distributions on infinite output sequences of Boolean vectors.</li>
-				<li>A simple example might be where the inputs are stable (i.e., the infinite input sequence is fixed over time) and the output is w.h.p at any time after some convergence time t_c the value of some simple function like WTA applied to the inputs.</li>
-			</ul>
-			<li>Lili discussed a spiking neural network model with history that is used in her k-WTA paper.</li>
-			<li>Did not get to single neuron models or Maass lower bound.</li>
-		</ul>
+		
 		</ul>
 		</p>
 		
-		<h4><strong>Selection, Focus, and Attention Problems</strong> (~2 meetings)</h4>
-		
-		<p>(3/1) Winner-take-all competition (Lynch, Musco, Parter, Lili's work, and Fiete et al.'s work), Lili and CJ + Eghbal(?)
-			<ul>
-			<strong>To read:</strong>
-			<ul>
-				<li><a href = https://igi-web.tugraz.at/PDF/75.pdf>Lower Bounds for the Computational Power of Networks of Spiking Neurons</a>, Maass.</li>
-				<li>Chapter 5 of <a href="./cnmuscoThesis.pdf">Cameron's thesis</a> on fast WTA computation in spiking networks.</li>
-				<li><a href="https://www.biorxiv.org/content/10.1101/231753v1">How fast is neural winner-take-all when deciding between many options?</a>, Kriener, Chaudhuri, and Fiete.</li>
-			</ul>
-			<strong>To be presented:</strong>
-			<ul>
-				<li>Overview of single neuron modeling by CJ. Spill over from last meeting.</li>
-				<li><a href = https://igi-web.tugraz.at/PDF/75.pdf>Lower Bounds for the Computational Power of Networks of Spiking Neurons</a>, Maass. Presented by Brabeeba. Spill over from last meeting.</li>
-				<li>WTA neuroscience background, Eghbal and CJ.</li>
-			<li><a href="https://arxiv.org/abs/1610.02084">
-Computational Tradeoffs in Biological Neural Networks: Self-Stabilizing Winner-Take-All Networks</a>, Lynch, Musco, and Parter. <br> Also see <a href="./cnmuscoThesis.pdf">Cameron's thesis </a> Chapter 5. Presented by Quanquan.</li>
-			<li><a href="https://www.biorxiv.org/content/10.1101/231753v1">How fast is neural winner-take-all when deciding between many options?</a>, Kriener, Chaudhuri, and Fiete. Eghbal.</li> 
-						<li><a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a> and possibly <a href="https://papers.nips.cc/paper/1636-neural-computation-with-winner-take-all-as-the-only-nonlinear-operation.pdf">Neural Computation with Winner-Take-All as the only Nonlinear Operation</a>, Maass. Overview by Brabeeba.</li> 
-		</ul>
-		<strong>Details on what was presented:</strong>
-		<ul>
-		<li>CJ discussed the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1484078/">Wilson and Cowan</a> paper, giving pioneering analyses of firing-rate model. Discussed treshold models and firing rate models, classification of neurons as excitatory vs.  
-inhibitory, and the interaction between these groups of neurons.  Also   discussed refractory periods and covered the main mathematical formulas  governing activation.</li>
-<ul>
-<li>Question: How do these models compare/related too discrete (stochastic) spiking neural network models?</li>
-<li>CJ also covered the <a href="https://physoc.onlinelibrary.wiley.com/doi/abs/10.1113/jphysiol.1952.sp004764">Hodgkin and Huxley model</a> and the relate <a href="https://link.springer.com/article/10.1007/BF02477753">Fitzhugh-Nagumo model.</a> The level of  detail in these models makes them suitable for describing the behavior of individual neurons, but maybe not so much for describing networks and their  behavior.
-	<li>CJ suggests <a href="https://link.springer.com/content/pdf/10.1007%2Fs00422-006-0068-6.pdf">this review</a> of the integrate-and-fire neuron model with homogeneous synaptic input and <a href="https://www.ncbi.nlm.nih.gov/pubmed/16821035">this</a> follow-up extending to inhomogenous synaptic input and network properties.</li>
-</ul>
-	<li>Brabeeba presented <a href = https://igi-web.tugraz.at/PDF/75.pdf>Lower Bounds for the Computational Power of Networks of Spiking Neurons</a>, Maass.</li>
-	<ul>
-		<li>Considers emulating Turing machines on a neural network; seems to be mainly of theoretical  interest.  The networks must encode unbounded amounts of information  
-in a finite network.  They do this by encoding detailed structures  
-such as stacks and counters in the amount of time between spikes.   
-This means that the networks are not tolerant to noise, since the  
-encodings are arbitrarily fine.</li>
-<li>However, parts of the network construction seemed interesting:   
-the construction was decomposed in terms of modules such as a Delay  
-module, and Inhibition module, a Synchronizer, a Compare module, a  
-Multiply module.  These pieces are used to build the larger network.   
-Some of the individual pieces may be interesting to study as neural  
-network problems.</li>
-	</ul>
-		</ul>
-	</ul>
-		</p>
-		<p>(3/8) WTA + Decision making and higher level modeling.
-			<ul>
-							<strong>To read:</strong>
-							<ul>
-								<li>Algorithms and proofs in <a href="./cnmuscoThesis.pdf">Cameron's thesis </a> Chapter 5 and <a href="https://arxiv.org/abs/1610.02084">related paper</a>.</li>
-								<li><a href="https://doi.org/10.1101/231753">Robust  
-				Parallel Decision-Making in Neural Circuits with Nonlinear Inhibition, </a> Kriener, Chaudhuri, and Fiete.</li>
-								<li><a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a>, Maass.</li>
-							</ul>
-			<strong>To be presented (a lot of spill over from last time):</strong>
-			<ul>
-				<li>WTA neuroscience background, including covering <a href=" https://www.pnas.org/content/112/30/9460">What the fly’s nose tells the fly’s brain</a>, Stevens and <a href="https://papers.cnl.salk.edu/PDFs/How%20the%20Basal%20Ganglia%20Make%20Decisions%201996-2876.pdf">Howo the Basal Ganglia Make Decisions</a>, Berns and Sejnowski. Presented Eghbal and CJ</li>
-							<li><a href="https://arxiv.org/abs/1610.02084">
-				Computational Tradeoffs in Biological Neural Networks: Self-Stabilizing Winner-Take-All Networks</a>, Lynch, Musco, and Parter. <br> Also see <a href="./cnmuscoThesis.pdf">Cameron's thesis </a> Chapter 5.</li>
-							<li><a href="https://www.biorxiv.org/content/10.1101/231753v1">How fast is neural winner-take-all when deciding between many options?</a>, Kriener, Chaudhuri, and Fiete. CJ and Eghbal.</li> 
-										<li><a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a>, Maass. Overview by Brabeeba.</li>
-													<li>"Spike-Based Winner-Take-All Computation: Fundamental Limits and Order-Optimal Circuits", Lili Su (pdf to be emailed out).</li>
-		<li>Graybiel lab modeling methods and overview, Sabrina and Alexander.</li>
-		<ul>
-			<li>Will cover work in two cell papers <a href="Friedman_Cell_Striosomes.pdf">here</a> and <a href="Stress_cell.pdf">here</a> looking at excitation-inhibition balance modeling during decision making and learning.</li>
-		</ul>
-			</ul>
-		 </ul>
-
-				<li>On 3/8 Brabeeba will also be presenting his + Nancy's paper "Integrating Temporal Information to Spatial Information in a Neural Circuit" at the TDS group meeting. 1:00pm-1:30pm, G-631.
-		</ul>
-		</p>
-		
-		<p>(3/15) WTA + Decision Making Continued
+		<p>(2/28) Oja's rule, analysis:  Brabeeba Wang and Chi-Ning Chou
 			<ul>
 				<strong>To read:</strong>
 				<ul>
-					<li><a href="https://doi.org/10.1101/231753">Robust Parallel Decision-Making in Neural Circuits with Nonlinear Inhibition,</a> Kriener, Chaudhuri, Fiete.</li>
-					<li><a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a>, Maass.</li>
-					<li><a href="Friedman_Cell_Striosomes.pdf">A Corticostriatal Path Targeting Striosomes Controls Decision-Making under Conflict,</a> Friedman et al.</li>
-					<li><a href="Stress_cell.pdf">Chronic Stress Alters Striosome-Circuit Dynamics, Leading to Aberrant Decision-Making,</a> Friedman et al.</li>
-				</ul>
-				<strong>To be presented:</strong>
+			<li>Chou, Wang. ODE-Inspired Analysis for the Biological Version of Oja's Rule in Solving Streaming PCA with For-All-Time Guarantee. Submitted to STOC 2020</li>
+		</ul>
+		<strong>To be presented:</strong>
+		<ul>
+			<li>Overview of the Oja's rule by Chi-Ning and Brabeeba</li>
+		</ul>
+		
+		</ul>
+		</p>
+		
+
+		<p>(3/6) Valiant's work:  Quanquan?
+			<ul>
+							<strong>To read:</strong>
+							<ul>
+								<li>Basic neuroid model and how it represents and learns concepts, for long-term learning.</li>
+								<li>Limitations on memory capacity.</li>
+								<li>Circuits of the Mind</li>
+							</ul>
+		
+		</ul>
+		</p>
+		
+		<p>(3/13) Valiant, cont'd:  Who?
+			<ul>
+				<strong>To read:</strong>
 				<ul>
-					<li>Eghbal will finish reviewing Fiete Lab's work on WTA.</li>
-					<li>Lili will cover here work on k-WTA: "Spike-Based Winner-Take-All Computation: Fundamental Limits and Order-Optimal Circuits" (pdf to be emailed out).</li>
-					<li>Brabeeba will cover <a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a>, Maass.
-						<li>Sabrina and Alexander will overview Graybiel lab work, including the two papers above. Some of this may spill over until next time.</li>
-					</li>
+					<li>Circuits of the Mind. Continued.</li>
+					<li>Valiant. Memorization and association on a realistic neural model. Neural Computation, 2006</li>
+					
 				</ul>
+				
 			</ul>
 		</p>
-		<p>(3/22) Decision making, continued.
+		<p>(3/20) Valiant, cont'd.  Papadimitriou.  Who?
 			<ul>
 			<strong>To read:</strong>
 			<ul>
-				<li><a href="Friedman_Cell_Striosomes.pdf">A corticostriatal path targeting striosomes  
-controls decision-making under conflict,</a> Friedman et al.</li>
-				<li><a href="Stress_cell.pdf">Chronic stress alters striosome-circuit  
-dynamics, leading to aberrant decision-making</a>, Friedman et al.</li>
-<li>
-	In preparation for dimensionality reduction/random projection meeting 4/5:
-	<ul>
-		<li><a href="http://science.sciencemag.org/content/358/6364/793">A neural algorithm for a fundamental computing problem</a>, Dasgupta et al.</li>
-		<li><a href="http://www.pnas.org/content/early/2018/11/26/1814448115">A neural data structure for novelty detection</a>, Dasgupta et al.</li> 
-		<li><a href="https://web.ma.utexas.edu/users/rward/madison14.pdf">This talk</a> overviewing random projection methods by Rachel Ward.</li>
-	</ul>
-</li>
+				<li>Valiant. The Hippocampus as a Stable Memory Allocator for Cortex. Neural Computation, 2012</li>
+				<li>Papadimitriou, Vempala. Cortical Learning via Prediction. JMLR 2015</li>
+	
 			</ul>
-			<strong>To be presented:</strong>
-			<ul>
-				<li>Sabrina and Alexander will continue Graybiel lab work on learning and decision making in mice from last time. See <a href="Slides for reading group AF.pptx">slides</a>.</li>
-				<li>CJ will present her work, 'Valence coding in the basolateral amygdala.'. References:
-				<ul>
-					<li><a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(17)31934-4">Organization of valence-encoding and projection-defined neurons in the basolateral amygdala,</a> Beyeler et al.</li>
-					<li><a href="https://www.nature.com/articles/nature14366">OA circuit mechanism for differentiating positive and negative associations,</a> Namburi et al.</li>
-					<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/27041499">Divergent Routing of Positive and Negative Information from the Amygdala during Memory Retrieval,</a> Beyeler et al.</li>
-				</ul>
-				</li>
-				
-			</ul>
+			
 				</ul>
 		</p>
 		
 		<h4><strong>Neural Coding, Random Projection, and Linear Algebra</strong> (~4 meetings)</h4>
-		<p>(4/5) Finishing up Past Topics + Introduction to dimensionality reduction and random projection.
+		<p>(3/27) No meeting, spring break
+			
+		<p>(4/3)Papadimitriou papers:  Who?
 			<ul>
-			<strong>To be presented:</strong>
-				<ul>
-					<li>Sabrina will finish talking about here work on learning a model for learning in mice.</li>
-					<li>Brabeeba will finally  present <a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a>.</li>
-					<li>Then Cameron will introduce random projection in general, and its conjectured use in neural dimensionality reduction.</li>
-				</ul>
-				<strong>To be read:</strong>
-			<ul>
-				<li><a href="https://igi-web.tugraz.at/PDF/113.pdf">On the Computational Power of Winner-Take-All</a>, Maass.</li>
-					<li><a href="http://www.pnas.org/content/early/2018/11/26/1814448115">A neural data structure for novelty detection</a>, Dasgupta et al.</li> 
-					<li><a href="http://science.sciencemag.org/content/358/6364/793">A neural algorithm for a fundamental computing problem</a>, Dasgupta et al.</li>
-				<li>See <a href="https://arxiv.org/pdf/1411.4357.pdf">David Woodruff's book</a> and <a href="https://web.ma.utexas.edu/users/rward/madison14.pdf">this presentation by Rachel Ward</a> for a general overview of applications of random projection and dimensionality reduction in data analysis, algorithms, and numerical computation.</li>
-			</ul>
-			<strong>What was presented:</strong>
-			<ul>
-				<li>Sabrina finished covering the Graybiel lab work. Discussed her model, based on basic spiking network model, with parameters (weights, biases, etc.) learned via a genetic algorithm to mimic observations.</li>
-				<li>Brabeeba discussed Maass's work on lower bounds for computing WTA and a one layer network with a WTA module can be used e.g. to simulate any two layer linear threshold network.</li>
-				<li>Cameron very briefly started introduction to random projection. To be continued next time.</li>
-			</ul>
-		</ul>
-		</p>
-		<p>(4/12) Random Projection Continued + Optimization in Spiking Networks, Cameron, Chi-Ning
-			<ul>
-			<strong>To be presented:</strong>
-			<ul>
-				<li>Cameron will finish introduction of random projection/compression methods in neural systems and algorithm design/data analysis.</li>
-				<li>Chi-Ning will discuss his work on implementing optimization in spiking neural network models.</li>
-			</ul>
 			<strong>To read:</strong>
 			<ul>
-				<li><a href="http://science.sciencemag.org/content/358/6364/793">A neural algorithm for a fundamental computing problem</a>, Dasgupta et al.</li>
-				<li><a href="http://www.pnas.org/content/early/2018/11/26/1814448115">A neural data structure for novelty detection</a>, Dasgupta et al.</li> 
-				<li><a href="https://web.ma.utexas.edu/users/rward/madison14.pdf">This talk</a> overviewing random projection methods by Rachel Ward.</li>
-				<li><a href="https://arxiv.org/pdf/1803.10375.pdf">On the Algorithmic Power of Spiking Neural Networks</a>, Chou, Chung, and Lu.</li>
+				<li>Maass, Papadimitriou, Vempala, Legenstein. Brain Computation:  A Computer Science Perspective.</li>
+				<li>Papadimitriou, Vempala, Mitropolsky, Collins, Maass. Brain Computation by Assemblies of Neurons. BioRxiv.</li>
+				<li>Legenstein, Maass, Papadimitriou, Vempala. Long Term Memory and the Densest K-Subgraph Problem. ITCS 2018</li>
 			</ul>
+			
 		</ul>
 		</p>
-		<p>(4/19) Sign consistent random projection, Rati and Meena.
+		<p>(4/10) Papadimitriou papers:  Who?
 			<ul>
 				<strong>To read:</strong>
 				<ul>
-				<li><a href="https://www.pnas.org/content/111/47/16872.full">Sparse sign-consistent Johnson–Lindenstrauss matrices: Compression with neuroscience-based constraints</a>, Allen-Zhu et al.</li> 
-				<li>Simple Analysis of Sparse, Sign-Consistent JL</a>, Jagadeesan. See version <a href=./signConst.pdf>here.</a>
+				<li>Papadimitriou, Vempala. Random Projection in the Brain and Computation with Assemblies of Neurons. ITCS 2019</li> 
 			</ul>
 		</ul>
 		</p>
 
 		
-		<h4><strong>Learning</strong> (~4 meetings)</h4>
-		
-		<p>(4/26) Overview of models for learning in neural networks, Brabeeba + Quanquan
+		<p>(4/17) Other Papadimitriou work:  Who?
 			<ul><strong>To read:</strong>
 				<ul>
-					<li><a href="https://page.mi.fu-berlin.de/rojas/neural/">Neural Networks - A Systematic Introduction</a>, Chapters 5,13,14.</li>
-					<li><a href="https://neuronaldynamics.epfl.ch/online/Ch19.S2.html">Description of spike-based learning model</a></li>
-					<li><a href="https://www.sciencedirect.com/science/article/pii/089360809500114X">Asymmetric Hopfield-type Networks: Theory and Applications</a>, Xu, Hu, Kwong.</li>
-					<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0129065789000475">Neural Networks, Principal Components, and Subspaces</a>, Oja.</li>
+					<li>Pokorny, Ison, Rao, Legenstein Papa., Maass. STDP forms associations between memory traces in networks of spiking neurons</li>
+					<li>Muller, Papa., Maass, Legenstein. A model for structured information representation in neural networks</li>
+					<li>Papa. On the optimality of grid cells. ArXiv 2016</li>
+					<li>Legenstein, Papa., Vampala, Maass. Assembly pointers for variable binding in networks of spiking neurons</li>
 			</ul>
-			<strong>What was presented:</strong>
-			<ul>
-				<li>Meena finished the sign consistent JL proof from last time.</li>
-				<li>Brabeeba introduced Hebbian learning in both rate-based and spiking models, Oja's learning rule and its connection to PCA. See his <a href="overview.pdf">notes</a>.</li>
-			</ul>
+			
 		</ul>
 		</p>
-		<p>(5/3) Finish learning model overview. Theoretical models for neural learning, Brabeeba and Quanquan
+		<p>(4/24) Connections with Artificial Neural Networks:  Lili Su
 			<ul>
 				<strong>To read:</strong>
 				<ul>
-					<li>See learning overview references from last time.</li>
-				<li><a href="http://drops.dagstuhl.de/opus/volltexte/2018/8359/pdf/LIPIcs-ITCS-2018-57.pdf">Long Term Memory and the Densest K-Subgraph Problem</a>, Legenstein et al.</li>
-				<li><a href="https://www.cc.gatech.edu/~vempala/papers/assemblies.pdf">Random Projection in the Brain and Computation with Assemblies of Neurons</a>, Papadimitriou and Vempala</li>
-				<li><a href="https://igi-web.tugraz.at/people/maass/psfiles/154.pdf">What can a neuron learn with spike-timing-dependent plasticity</a>,  
-Legenstein, Naeger, and Maass. May cover this.</li>			
+					<li>Relating gradient descent algorithms to biological algorithms.</li>
+				<li>Simulating gradient descent with local algorithms.</li>
+				<li>Pehlevan work on similarity-based learning?  What else?</li>
+				<li><a href="https://arxiv.org/pdf/1908.01867.pdf">Chklovskii's work: Neuroscience-inspired online unsupervised learning algorithms</a></li>			
 			</ul>
 			<strong>What was presented:</strong>
 			<ul>
@@ -309,22 +200,29 @@ Legenstein, Naeger, and Maass. May cover this.</li>
 		</ul>
 		
 		</p>
-		<p>(5/10) Theoretical models for neural learning, machine Learning with spiking networks, Quanquan, Brabeeba, and Lili
+		<p>(5/1) Learning of logically structured concepts:  Nancy Lynch
 			<ul>
 				<strong>To read:</strong>
 				<ul>
-					<li><a href="http://drops.dagstuhl.de/opus/volltexte/2018/8359/pdf/LIPIcs-ITCS-2018-57.pdf">Long Term Memory and the Densest K-Subgraph Problem</a>, Legenstein et al.</li>
-					<li><a href="https://www.cc.gatech.edu/~vempala/papers/assemblies.pdf">Random Projection in the Brain and Computation with Assemblies of Neurons</a>, Papadimitriou and Vempala</li>
-					<li><a href="https://arxiv.org/abs/1804.08150">Deep learning in SNNs</a>, Tavanei, et al.</li>
-						<li><a href="https://arxiv.org/abs/1803.09574">Long short-term memory and learning-to-learn in networks of spiking neurons</a>, Bellec, Salaj, Subramoney, Legenstein, and Maass.</li>
+					<li>Lynch and Mallmann-Trenn. Learning Hierarchically Structured Concepts. To be submitted to COLT 2020.</li>
+					<li>Mhaskar, Liao, Poggio. Learning functions:  When is deep better than shallow?. arXiv 2016</li>
+					<li>Stern, Andreas, Klein.  A Minimum Span-Based Neural Constituency Parser.</li>
+						<li>Zhou, Bau, Oliva, Torralba. Interpreting deep visual representations via network dissection. arXiv 2017. </li>
+						<li>Hubel and Wiesel. Receptive fields of single neurons in the cat's striate cortex. J. Physiology 1959.</li>
+						<li>Hubel and Wiesel. Receptive fields, binocular interaction, and functional architecture in the cat's visual cortex. J. Physiology 1962.</li>
+						<li>Felleman and van Essen. Distributed hierarchical processing in the primate cerebral cortex. Cerebral cortex, 1991.</li>
 				</ul>
-				<strong>What was presented:</strong>
-				<ul>
-					<li>Quanquan led discussion of the first two papers above.</li>
-					<li>Concluded group with a discussion of future work and collaborations.</li>
-				</ul>
+		
 			</ul>
 		</p>
+		<p>(5/8)  Learning of concepts with geometric and/or temporal structure:  Brabeeba Wang, Chi-Ning-Chou
+			<ul>
+				<strong>To read:</strong>
+				<ul>
+					<li>Principles of Neural Science. Chapter 25, 26, 27.</li>
+				</ul>
+		
+			</ul>
 		
 	<!--	<h4><strong>Unscheduled but need/want to fit in somewhere</strong></h4>
 		<p>
